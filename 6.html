@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+<script>
+    function Arttır() {
+        var sonuc = document.getElementById('sonuc');
+        sonuc.value = Number(sonuc.value) + 1;
+    }
+    function Azalt() {
+        var sonuc = document.getElementById('sonuc');
+        sonuc.value = Number(sonuc.value) - 1;
+    }
+    function Sıfırla()
+    {
+        var sonuc = document.getElementById('sonuc');
+        sonuc.value = 0 ;
+    }
+
+
+</script>
+
+
+</head>
+
+<body>
+<div class="container mt-3">
+    <center>
+        <input type="button" style="width: 100px; height: 100px; background-color: blue; color: white;" onclick="Arttır()" value="Arttır">
+        <input type="button" class="mx-2" style="width: 100px; height: 100px; background-color: red; color: white;"  onclick="Azalt()" value="Azalt">
+        <input type="button" class="mx-2" style="width: 100px; height: 100px; background-color: gray; color: white;"  onclick="Sıfırla()" value="Sıfırla">
+        <input disabled="true" type="button" id="sonuc" style="width: 100px ; height: 100px; background-color: green; color: white;" value="0">
+    </center>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
